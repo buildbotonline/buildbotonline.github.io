@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build ChatBot online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+    
+</head>
+<body>
+
+<!-- Section 1 -->
+<section class="w-full px-3 antialiased bg-indigo-600 lg:px-6">
+    <div class="mx-auto max-w-7xl">
+        <nav class="flex items-center w-full h-24 select-none" x-data="{ showMenu: false }">
+            <div class="relative flex flex-wrap items-center justify-between w-full h-24 mx-auto font-medium md:justify-center">
+                <a href="#_" class="w-1/4 py-4 pl-6 pr-4 md:pl-4 md:py-0">
+                    <span class="p-1 text-xl font-black leading-none text-white select-none"><span>Build Bot</span><span class="text-indigo-300">.</span></span>
+                </a>
+                <div class="fixed top-0 left-0 z-40 items-center hidden w-full h-full p-3 text-xl bg-gray-900 bg-opacity-50 md:text-sm lg:text-base md:w-3/4 md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex': showMenu, 'hidden': !showMenu }">
+                    <div class="flex-col w-full h-auto h-full overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="container py-32 mx-auto text-center sm:px-4">
+
+            <h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl"><span class="block">Simplify the way you</span> <span class="relative inline-block mt-3 text-transparent text-white">build chatbots</span></h1>
+            <div class="max-w-lg mx-auto mt-6 text-sm text-center text-indigo-200 md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl">If you are ready to change the way you build chatbots, then you'll want to use our builder to make it fun and easy!</div>
+            <form action="https://www.getrevue.co/profile/buildbot/add_subscriber" method="post" target="_blank" novalidate>
+                <div class="relative flex items-center max-w-md mx-auto mt-12 overflow-hidden text-center rounded-full">
+                    <input type="email" name="member[email]" id="member_email" placeholder="Email Address" class="w-full h-12 px-6 py-2 font-medium text-indigo-800 focus:outline-none">
+                    <span class="relative top-0 right-0 block">
+                        <input type="submit" value="Sign Up" name="member[subscribe]" id="member_submit" class="inline-flex items-center w-32 h-12 px-8 text-base font-bold leading-6 text-white transition duration-150 ease-in-out bg-indigo-400 border border-transparent hover:bg-indigo-700 focus:outline-none active:bg-indigo-700">
+                    </span>
+                </div>
+            </form>
+            <div class="mt-8 text-sm text-indigo-300">By signing up, you agree to our terms and services.</div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2 -->
+<section class="text-gray-700 bg-white body-font">
+    <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
+        <a href="#" class="text-xl font-black leading-none text-gray-900 select-none logo">Build Bot<span class="text-indigo-600">.</span></a>
+        <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2022 Build bot</p>
+    </div>
+</section>
+
+<!-- AlpineJS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+
+</body>
+</html>
